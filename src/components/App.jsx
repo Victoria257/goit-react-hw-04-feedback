@@ -13,13 +13,13 @@ export function App() {
     const { name } = event.target;
     switch (name) {
       case 'good':
-        setGood(good + 1);
+        setGood(prevState.good + 1);
         break;
       case 'neutral':
-        setNeutral(neutral + 1);
+        setNeutral(prevState.neutral + 1);
         break;
       case 'bad':
-        setBad(bad + 1);
+        setBad(prevState.bad + 1);
         break;
       default:
         return;
